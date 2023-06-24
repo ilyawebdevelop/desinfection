@@ -1,0 +1,25 @@
+// prices
+.prices {
+    background-color: #F2F2F2;
+    h2 {
+        margin-bottom: 33px;
+    }
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 40px;
+    }
+    &-item {
+        grid-column: 4 span;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.80);
+        box-shadow: 0px 5px 10px 0px rgba(94, 100, 105, 0.07);   
+        padding-top: 60px;     
+        &__title {
+            font-size: 48px;
+            line-height: 54px;
+            font-family: $font-family-title;
+            margin-bottom: 39px;
+        }
+    }
+}

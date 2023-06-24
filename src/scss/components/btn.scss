@@ -1,0 +1,18 @@
+// btn
+
+.btn {
+    border-radius: 100px;
+    background: #4091E1;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    font-weight: 500;
+    color: #fff;
+    &--dark {
+        background: #000;        
+    } 
+}
+.prices-item__btn{
+    width: 100%;
+}

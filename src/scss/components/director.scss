@@ -1,0 +1,76 @@
+// director
+.dir {
+    &__right {
+        position: relative;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: auto 524px;
+    }
+    &__play {
+        position: absolute;
+        left: -50px;
+        top: 200px;
+        &:hover {
+            &:before {
+                transform: rotate(90deg);
+            }
+        }
+
+        svg {
+            fill: #E6383A;
+            width: 85px;
+            height: 85px;
+            position: relative;
+            z-index: 1;
+        }
+
+        &::before {
+            display: block;
+            content: '';
+            width: 210px;
+            height: 210px;
+            background: url('@img/director/play-bg.svg');
+            position: absolute;
+            left: -74px;
+            top: -66px;
+            border-radius: 50%;
+            background-size: cover;
+            transition: transform .2s linear;
+        }
+        &::after {
+            display: block;
+            content: "";
+            width: 208px;
+            height: 205px;
+            backdrop-filter: blur(12px);
+            position: absolute;
+            border-radius: 50%;
+            left: -70px;
+            top: -62px;
+        }
+    }
+
+    &__image {
+        position: relative;
+
+        &-round {
+            width: 524px;
+            height: 524px;
+            background: #90C6FC;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+        }
+        img {
+            position: relative;
+            z-index: 1;
+            width: 418px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+}
