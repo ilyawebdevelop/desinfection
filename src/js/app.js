@@ -74,9 +74,9 @@ btnMenuClose.addEventListener('click', function (e) {
 
 // close menu in Landing page
 $(document).on("click", ".header__nav-list li a", function (e) {
-  $('.header-wrapper').removeClass('open');
+  $('.header__nav').removeClass('open');
   $('body').removeClass('hidden');
-  $('#nav-icon3').removeClass('open');
+  // $('#nav-icon3').removeClass('open');
 });
 
 

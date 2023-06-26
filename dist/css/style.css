@@ -11079,6 +11079,12 @@ h5 {
   }
 }
 
+@media (max-width: 575px) {
+  .header.sticky-bar .btn-close {
+    top: 21px;
+  }
+}
+
 .btn {
   border-radius: 100px;
   background: #4091E1;
@@ -11206,12 +11212,6 @@ h5 {
 
 .hamburger .meat {
   width: 100%;
-}
-
-.top-bun.active,
-.meat.active,
-.bottom-bun.active {
-  opacity: 0;
 }
 
 .modal-header {

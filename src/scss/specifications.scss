@@ -251,3 +251,10 @@ h5 {
     top: 33px;
   }
 }
+.header.sticky-bar {
+  .btn-close {
+    @media(max-width: 575px){
+      top: 21px;
+    }
+  }
+}
