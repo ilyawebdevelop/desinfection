@@ -189,7 +189,7 @@
                     <div class="dir__image-round"></div>
                     <img src="img/director/dir.png" alt="image">
                 </div>
-                <button class="dir__play">
+                <button class="dir__play" data-toggle="modal" data-target="#modal-dir">
                     <svg>
                         <use xlink:href="img/icons/icons.svg#play"></use>
                     </svg>
@@ -726,12 +726,16 @@
     </div>
 </footer>
 		<!-- modal -->
-<!-- event -->
+<!-- order -->
 <div class="modal fade modal-order" id="modal-order" tabindex="-1" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <h2 class="modal-title">Оставить заявку</h2>
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Оставить заявку</h2>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+
       <form action="#" class="modal-form">
         <div class="modal-form__row form-floating">
           <input class="form-control" type="text" name="Ваше имя" placeholder="Ваше имя">
@@ -741,11 +745,30 @@
           <input class="form-control" type="tel" name="Ваш телефон" placeholder="Ваш телефон">
           <label for="input-name">Ваш телефон</label>
         </div><!-- /modal-form__row -->
-        <p class="modal-agreement">   Согласен с политикой обработки персональных данных</p>     
+        <p class="modal-agreement"> Согласен с политикой обработки персональных данных</p>
         <div class="modal-form__row">
           <button class="btn modal-btn">Отправить заявку</button>
         </div><!-- /modal-form__row -->
       </form>
+    </div><!-- /modal-content -->
+  </div>
+</div>
+
+<!-- director -->
+<div class="modal fade modal-dir" id="modal-dir" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+
+      <video class="video-js" controls preload="auto" poster="img/presentation/video-bg.png" data-setup="{}">
+        <source src="img/1.mp4" type="video/mp4" />
+
+      </video>
+
     </div><!-- /modal-content -->
   </div>
 </div>

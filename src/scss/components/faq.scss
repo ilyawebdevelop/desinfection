@@ -124,4 +124,7 @@
 
 .faq__body-wrapper {
     padding-bottom: 50px;
+    @media(max-width: 991px){
+        padding-bottom: 30px;
+    }
 }

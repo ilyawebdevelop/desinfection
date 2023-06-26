@@ -10850,6 +10850,10 @@ body.hidden {
   overflow: hidden;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -11060,17 +11064,20 @@ h5 {
   color: #fff;
 }
 
+.header .btn-close {
+  display: none;
+}
+@media (max-width: 991px) {
+  .header .btn-close {
+    display: block;
+  }
+}
+
 .btn-close {
   position: absolute;
   right: 10px;
   top: 10px;
-  display: none;
   background-size: 1.2em;
-}
-@media (max-width: 991px) {
-  .btn-close {
-    display: block;
-  }
 }
 @media (max-width: 575px) {
   .btn-close {
@@ -11216,6 +11223,7 @@ h5 {
 
 .modal-header {
   padding: 45px;
+  padding-left: 0;
   padding-bottom: 25px;
   border-bottom: none;
 }
@@ -11223,11 +11231,9 @@ h5 {
   padding: 45px;
   padding-top: 0;
 }
-.modal-title {
-  margin-bottom: 20px;
-}
 .modal-content {
   padding: 40px;
+  border-radius: 20px;
 }
 @media (max-width: 370px) {
   .modal-content {
@@ -11247,6 +11253,65 @@ h5 {
   font-size: 14px;
   line-height: 18px;
   margin-top: 16px;
+}
+
+.modal-dir .modal-dialog {
+  max-width: 800px;
+}
+.modal-dir .video-js {
+  width: 100%;
+  border-radius: 20px;
+  height: 454px;
+}
+@media (max-width: 767px) {
+  .modal-dir .video-js {
+    height: 429px;
+  }
+}
+@media (max-width: 575px) {
+  .modal-dir .video-js {
+    height: 300px;
+  }
+}
+@media (max-width: 420px) {
+  .modal-dir .video-js {
+    height: 250px;
+  }
+}
+.modal-dir .video-js:hover .vjs-big-play-button {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.modal-dir .video-js .vjs-big-play-button {
+  width: 107px;
+  height: 107px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.05);
+  top: 50%;
+  transform: translateY(-26px);
+  transition: background-color 0.2s linear;
+}
+.modal-dir .video-js .vjs-big-play-button .vjs-icon-placeholder::before {
+  backdrop-filter: blur(12px);
+  border-radius: 50%;
+  content: "";
+  background: url("../img/icons/play.svg") no-repeat center center/28px;
+}
+.modal-dir .video-js .vjs-control-bar {
+  background-color: transparent;
+}
+.modal-dir .modal-content {
+  border-radius: 20px;
+}
+
+.modal-header .btn-close {
+  right: 21px;
+  top: 20px;
+}
+
+.modal-dir .modal-header {
+  padding: 10px;
 }
 
 .header {
@@ -12087,6 +12152,9 @@ h5 {
   content: "";
   background: url("../img/icons/play.svg") no-repeat center center/28px;
 }
+.presentation .video-js .vjs-control-bar {
+  background-color: transparent;
+}
 
 .vjs-poster img {
   object-fit: cover;
@@ -12645,6 +12713,11 @@ h5 {
 
 .faq__body-wrapper {
   padding-bottom: 50px;
+}
+@media (max-width: 991px) {
+  .faq__body-wrapper {
+    padding-bottom: 30px;
+  }
 }
 
 .footer {

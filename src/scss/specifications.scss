@@ -37,6 +37,9 @@ html {
 body.hidden {
   overflow: hidden
 }
+body.modal-open {
+  overflow: hidden
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -237,15 +240,22 @@ h5 {
 .text-white {
   color: #fff;
 }
+.header {
+  .btn-close {
+    display: none;
+    @media(max-width: 991px){
+      display: block;
+    }
+  }
+ 
+}
 .btn-close {
   position: absolute;
   right: 10px;
   top: 10px;
-  display: none;
+
   background-size: 1.2em;
-  @media(max-width: 991px){
-    display: block;
-  }
+
   @media(max-width: 575px){
     right: 20px;
     top: 33px;
