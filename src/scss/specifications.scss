@@ -25,8 +25,8 @@ body {
   background-color: #fff;
 
   @media (max-width: 991px) {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 22px;
   }
 }
 
@@ -155,8 +155,8 @@ h2 {
   line-height: 54px;
 
   @media(max-width: 991px) {
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 33px;
+    line-height: 38px;
   }
 }
 
@@ -204,12 +204,50 @@ h5 {
   height: 85px;
   background-color: #4091E1;
   border-radius: 50%;
+  border: 1px solid transparent;
+  transition: background-color .2s linear;
+  &:hover {
+    background-color: #1784ef;
+  }
+  &.swiper-button-disabled {
+    background-color: #fff;
+    border: 1px solid #E6E6E6;
+    svg {
+      width: 21px;
+      fill: #000;
+      opacity: .1;
+    }  
+  }
   svg {
     width: 21px;
+    height: 21px;
     fill: #fff;
   }  
-
+}
+.nav-arrow-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  @media(max-width: 575px){
+    flex-direction: row-reverse;
+    justify-content: center;
+    column-gap: 20px;
+  }
 }
 .text-white {
   color: #fff;
+}
+.btn-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+  background-size: 1.2em;
+  @media(max-width: 991px){
+    display: block;
+  }
+  @media(max-width: 575px){
+    right: 20px;
+    top: 33px;
+  }
 }

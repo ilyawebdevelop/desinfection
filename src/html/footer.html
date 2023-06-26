@@ -1,64 +1,71 @@
 <!-- Footer -->
 <footer class="footer" id="footer">
 
-    <div class="callback">
+    <div class="callback" style="background-image: url('@img/footer/callback.png');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <h2>Оставить предварительную заявку</h2>
-                    <span>и получить подробное описание курса</span>
+                    <span class="callback__descr">и получить подробное описание курса</span>
                 </div>
                 <div class="col-lg-6">
                     <form action="#" class="callback-form">
-                        <div class="callback-form__row d-flex">
-                            <input type="tel" placeholder="Номер телефона">
-                            <button class="btn callback-form__btn">Оставить заявку</button>
+                        <div class="callback-form__content">
+                            <div class="callback-form__row d-flex">
+                                <input type="tel" placeholder="Номер телефона">
+                                <button class="btn callback-form__btn">Оставить заявку</button>
+                            </div>
+                            <span>Согласен с политикой обработки персональных данных</span>
                         </div>
-                        <span>Согласен с политикой обработки персональных данных</span>
+
                     </form>
                 </div>
             </div>
+            <div class="callback-form-round"></div>
         </div>
     </div><!-- /callback -->
 
     <div class="footer-top">
-        <div class="container d-flex justify-content-between">
-            <div class="footer-left">
-                <a href="" class="footer__logo logo">
-                    <img src="@img/icons/logo.svg" alt="icon">
-                    <span>
-                        Авторский
-                        онлайн-курс
-                    </span>
-                </a><!-- /logo -->
-                <a class="footer-phone" href="tel:+79600862338">+7 (960) 086-23-38</a>
-                <a class="footer-place" href="#">г. Казань, ул. Пушкина, д. 7, оф. 202</a>
-            </div><!-- /footer-left -->
-            <div class="footer-center">
-                <nav class="footer-nav">
-                    <ul class="footer-nav__list">
-                        <li><a href="#">Тарифы</a></li>
-                        <li><a href="#">Обо мне</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </nav>
-                <nav class="footer-nav">
-                    <ul class="footer-nav__list">
-                        <li><a href="#">Публичный договор-оферта</a></li>
-                        <li><a href="#">Пользовательское соглашение</a></li>
-                        <li><a href="#">Как оплатить</a></li>
-                        <li><a href="#">Реквизиты</a></li>
-                    </ul>
-                </nav>
-            </div><!-- /footer-center -->
-            <div class="footer-right">
-                <button class="btn btn--blue">Заказать обратный звонок</button>
+        <div class="container d-flex flex-column flex-lg-row justify-content-between">
+            <div class="footer-left d-flex">
+                <div class="footer-col">
+                    <a href="/" class="footer__logo logo d-flex align-items-center">
+                        <img src="@img/icons/logo.svg" alt="icon">
+                        <span>
+                            Авторский
+                            онлайн-курс
+                        </span>
+                    </a><!-- /logo -->
+                    <a class="footer-phone" href="tel:+79600862338">+7 (960) 086-23-38</a>
+                    <a class="footer-place" href="#">г. Казань, ул. Пушкина, д. 7, оф. 202</a>
+                </div>
+                <div class="footer-col flex-column flex-sm-row align-items-center align-items-sm-start d-flex footer-nav-wrapper">
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li><a class="arrow-wrapper" href="#prices">Тарифы</a></li>
+                            <li><a class="arrow-wrapper" href="#dir">Обо мне</a></li>
+                            <li><a class="arrow-wrapper" href="#faq">FAQ</a></li>
+                            <li><a class="arrow-wrapper" href="#footer">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li><a href="#">Публичный договор-оферта</a></li>
+                            <li><a href="#">Пользовательское соглашение</a></li>
+                            <li><a href="#">Как оплатить</a></li>
+                            <li><a href="#">Реквизиты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div><!-- /footer-left -->    
+            <div class="footer-right d-flex flex-column justify-content-end">
+                <button class="btn btn--blue" data-toggle="modal" data-target="#modal-order">Заказать обратный звонок</button>
             </div><!-- /footer-right -->
         </div>
     </div>
     <div class="footer-bottom">
-        <div class="container d-flex justify-content-between align-items-center">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 gap-md-0">
             <div class="copyright">
                 Copyright © 2023. Все права защищены.
             </div>

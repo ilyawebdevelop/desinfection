@@ -11,8 +11,24 @@
     padding-top: 0;
   }
 
-  &-title {
-    font-size: 23px;
+  &-title { 
+    margin-bottom: 20px;
+  }
+  &-content {
+    padding: 40px;
+    @media(max-width: 370px){
+      padding: 30px;
+    }
   }
 }
-
+.modal-form__row {
+  margin-bottom: 10px;
+}
+.form-control {
+  border-radius: 10px;
+}
+.modal-agreement {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 16px;
+}

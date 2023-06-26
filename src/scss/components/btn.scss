@@ -9,10 +9,73 @@
     padding-bottom: 23px;
     font-weight: 500;
     color: #fff;
+    transition: background-color .2s linear;
+    white-space: nowrap;
+    @media(max-width: 991px){
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    &:hover {
+        background-color: #1784ef;
+    }
     &--dark {
-        background: #000;        
+        background: #000;      
+        &:hover {
+    background-color: #e6383a;            
+        }  
     } 
 }
 .prices-item__btn{
     width: 100%;
+}
+.intro-form__btn {
+    position: absolute;
+    right: 0;
+    @media(max-width: 575px){
+        position: unset;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+.start-content__btn {
+    margin-right: 10px;
+    @media(max-width: 575px){
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+.callback-form__btn {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    @media(max-width: 575px){
+        position: unset;
+        margin-top: 10px;
+    }
+}
+.dir__btn{
+    width: 100%;
+}
+.steps-finish__btn{
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @media(max-width: 575px){
+        white-space: wrap;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+.prices-item__btn {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.modal-btn{
+    width: 100%;
+    margin-top: 19px;
 }

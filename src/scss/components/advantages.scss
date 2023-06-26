@@ -1,4 +1,46 @@
 // advantages
 .advantages {
-    
+    background-color: #F2F2F2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    h2 {
+        max-width: 630px;
+        margin-bottom: 50px;
+        @media(max-width: 991px){
+            margin-bottom: 30px;
+        }
+    }
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 66px;
+        @media(max-width: 991px){
+            column-gap: 20px;
+        }
+        @media(max-width: 575px){
+            row-gap: 40px;
+        }
+    }
+    &-item {
+        grid-column: 4 span;
+        padding-top: 38px;
+        border-top: 2px solid #E6383A;
+        font-size: 24px;
+        font-weight: 300;
+        padding-right: 20px;
+        line-height: 30px;
+        @media(max-width: 1199px){
+            font-size: 20px;
+            line-height: 25px;
+        }
+        @media(max-width: 991px){
+            font-size: 16px;
+            line-height: 22px;
+            padding-top: 20px;
+        }
+        @media(max-width: 575px){
+            grid-column: 6 span;
+        }
+    }
 }

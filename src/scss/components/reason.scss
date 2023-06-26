@@ -1,4 +1,82 @@
 // reason
 .reason {
-    
+    background-color: #F2F2F2;
+
+    h2 {
+        margin-bottom: 80px;
+        @media(max-width: 991px){
+            margin-bottom: 55px;
+        }
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 34px;
+        @media(max-width: 1199px){
+            column-gap: 20px;
+        }
+        @media(max-width: 575px){
+            column-gap: 10px;
+        }
+
+        &-top {
+            margin-bottom: 65px;
+            @media(max-width: 991px){
+                row-gap: 45px;
+                margin-bottom: 45px;
+            }
+          
+        }
+    }
+
+    &-item {       
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 5px 10px 0px rgba(94, 100, 105, 0.07);
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 35px;
+        @media(max-width: 1199px){
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+   
+        &-col {
+            grid-column: 3 span;
+            @media(max-width: 991px){
+                grid-column: 6 span;
+            }
+        }
+        // padding-top: 114px;
+
+        &__descr {
+            text-align: center;
+            font-size: 18px;
+            line-height: 24px;      
+            margin-top: 10px;   
+            @media(max-width: 1199px){
+                font-size: 16px;
+                line-height: 22px;
+            } 
+            @media(max-width: 575px){
+                font-size: 14px;
+                line-height: 19px;
+                margin-top: 0;
+            }
+        }
+        &__img {
+            border-radius: 15px;
+            background: linear-gradient(180deg, #616161 0%, #1E1E1E 100%);     
+            width: 105px;
+            height: 105px;
+            display: flex;
+            align-items: center;
+            justify-content: center;       
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            bottom: 24px;
+        }
+    }
 }

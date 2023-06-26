@@ -1,10 +1,24 @@
 <!-- modal -->
 <!-- event -->
-<div class="modal fade modal-event" id="modal-event" tabindex="-1" aria-labelledby="exampleModalLabel"
+<div class="modal fade modal-order" id="modal-order" tabindex="-1" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-
-    </div>
+      <h2 class="modal-title">Оставить заявку</h2>
+      <form action="#" class="modal-form">
+        <div class="modal-form__row form-floating">
+          <input class="form-control" type="text" name="Ваше имя" placeholder="Ваше имя">
+          <label for="input-name">Ваше имя</label>
+        </div><!-- /modal-form__row -->
+        <div class="modal-form__row form-floating">
+          <input class="form-control" type="tel" name="Ваш телефон" placeholder="Ваш телефон">
+          <label for="input-name">Ваш телефон</label>
+        </div><!-- /modal-form__row -->
+        <p class="modal-agreement">   Согласен с политикой обработки персональных данных</p>     
+        <div class="modal-form__row">
+          <button class="btn modal-btn">Отправить заявку</button>
+        </div><!-- /modal-form__row -->
+      </form>
+    </div><!-- /modal-content -->
   </div>
 </div>
